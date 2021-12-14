@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tillgänglighet</title>
+  <link rel="stylesheet" href="/Styling/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body> 
+  <header>
+    <h1 class="Rubrik">Tillgänglighet</h1>
+    
+    <aside class="intro"> 
+   <p class="introtext">Att göra en sida mer tillgänglig innebär att skapa sätt att göra information mer lättåtkomlig för folk med funktionshinder eller funktionsnedsättning. När man designar en hemsida så måste man ha i åtanke att inkludera de människor som har svårigheter i vardagen. Ju mer samhället blir beroende av datorer så kommer fler människor att söka sig runt på webben. Det innebär att vi som frontend-utvecklare måste ta hänsyn till det i våran kod och göra det så enkelt som möjligt för så många som möjligt att ta del av den informationen som hemsidan ger. </p>
+
+   <p class="introtext">Här nedanför ger jag några exempel på vad man ska tänka på. Jag har delat upp det i två kategorier. Vad man ska tänka på design-mässigt och vad man ska tänka på när man kodar. </p>
+    </aside>
+
+  </header>
+
+  <main>
+      <h2 class="card-title1">Detta ska du tänka på gällande design</h2>
+    <div class="design-container">
+
+    <article>
+      <h3>Använd inte färg bara till att förmedla information</h3>
+
+      <img src="https://images.unsplash.com/photo-1500042600524-37ecb686c775?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="colors in a rainbow shape">
+
+      <p class="infotext">Vissa kan inte uppfatta färgskillnader, till exempel på grund av färgblindhet. Det är bra att använda färger men låt inte färgskillnader vara det enda sättet att urskilja information utan komplettera med mönster eller liknande</p>
+    </article>
+
+    <article>
+      <h3>Länka alla sidor till startsidan </h3>
+
+      <img src="https://media.istockphoto.com/photos/house-concept-on-keyboard-picture-id952793720?b=1&k=20&m=952793720&s=170667a&w=0&h=LrLY5tC18-mtNs6R2RyB0Ib8IUR9MqUF1eq7UOe2q2g=" alt="Home keyboard logo">
+  
+      <p class="infotext">Eftersom att man inte vet vilken sida användaren besöker först på hemsidan så är det viktigt att ha en tydlig navigation som användaren kan använda sig av. Navigationen ska ligga i headern eller footern. </p>
+    </article>
+
+    <article>
+      <h3>Skriv tydliga länkar</h3>
+
+        <img src="https://media.istockphoto.com/photos/abstract-futuristic-with-connection-lines-on-blue-background-plexus-picture-id1285395672?b=1&k=20&m=1285395672&s=170667a&w=0&h=Wkn9h7EjOTLAAG8zSoTcnvrDrtFjTOPryJeIOBlD3r4=" alt="illustration of the web">
+    
+        <p class="infotext">Användaren ska kunna förutse vart länken tar en innan hen trycker på den. Ha i åtanke vart placeringen av länken passar bäst. Om länkarna är till e-post eller ett dokument så ska användaren veta det innan.</p>
+    </article>
+
+    <article>
+      <h3>Gör det möjligt att ångra </h3>
+
+      <img src="https://media.istockphoto.com/photos/undo-push-button-picture-id1301643772?b=1&k=20&m=1301643772&s=170667a&w=0&h=eaoYqvklCH6Tvy02rLN_WFSnioxdNTxo2AThcfo7yro=" alt="red button with text 'undo'">
+
+      <p class="infotext">Personer som använder pekskärm ska kunna ångra sitt nedtryck detta för att undvika att det sker några misstag. Detta kan man göra med en s.k. ”up-event” </p>
+    </article>
+
+    <article>
+      <h3>Presentera innehållet i en meningsfull ordning för alla</h3>
+
+      <img src="https://media.istockphoto.com/photos/website-designer-creative-planning-application-developer-development-picture-id1206638576?b=1&k=20&m=1206638576&s=170667a&w=0&h=NxHnlT5fVqBEVAPmM8Me77cC6JCLZrTFYlnI6VYyeXE=" alt="person drawing wireframes">
+
+      <p class="infotext">Oavsett om personen surfar på mobil och eller padda eller dator så ska innehållet visas på ett snyggt och meningsfullt sätt dvs. att designa mobile-first med responsiv design. Granska även läsordningen och avgör om den är logisk.</p>
+    </article>
+
+
+    <article>
+      <h3> Orsaka inte epileptiska anfall genom blinkande</h3>
+
+      <img src="https://media.istockphoto.com/photos/doctor-writing-word-epilepsy-with-marker-medical-concept-picture-id1180980957?b=1&k=20&m=1180980957&s=170667a&w=0&h=8ZTrCmxt8Xvmr62lRJ0ieQCIcclAYb5uNAS79uZMzjM=" alt="doctor writing the word epilepsy">
+
+      <p class="infotext">Folk har epilepsi så det får man också ha i åtanke när man gör en sida. Man brukar säga att max 3 växlingar av ljus till mörk inom en sekund är okej.</p>
+    </article>
+
+  </div>
+
+  <div class="space">
+
+  </div>
+
+  <h2 class="card-title2">Detta ska du tänka på gällande din kod</h2>
+  <div  class="code-container">
+
+    <article>
+      <h3>Beskriv med text allt innehåll som inte är text</h3>
+
+      <img src="https://media.istockphoto.com/photos/quote-words-have-power-made-out-of-wooden-letters-on-bright-yellow-picture-id1271673071?b=1&k=20&m=1271673071&s=170667a&w=0&h=vSZhtZ39iWqNqQ6GrZOjT4OppQsrMqSYMfV7E3hOg9g=" alt="words have power">
+
+      <p class="infotext">För personer som är beroende av skärmläsning så behöver man ange en alt tag som beskriver bilden. Om det händer något särskilt i bilden så är det även bra att ha det med i beskrivningen</p>
+    </article>
+
+    <article>
+      <h3>Ange språkförändringar i koden</h3>
+
+      <img src="https://media.istockphoto.com/photos/hello-picture-id1034516014?b=1&k=20&m=1034516014&s=170667a&w=0&h=wMHtbTFWAONEMW35jcTTkBbDOJ23uDqmBzn--unFoaQ=" alt="hi in different languages">
+
+      <p class="infotext">Ange aktuellt språk med lang-attribut på omslutande element när språket i elementet är ett annat än sidans huvudspråk. Sidans huvudspråk ska även reflekteras i koden</p>
+    </article>
+
+    <article>
+      <h3>Märk upp vanliga formulärfält i koden</h3>
+
+      <img src="https://media.istockphoto.com/photos/love-working-from-home-picture-id1182641010?b=1&k=20&m=1182641010&s=170667a&w=0&h=8vcHvvDfC7HnyZb24As-jdr7z8tNu8Xr5JJRvHYVXEw=" alt="someone is using a computer">
+
+      <p class="infotext">I kommentarsfält så skriver man alltid vad som förväntas av användaren för att undvika förvirring. Vissa webbläsare sparar det som inmatas lokalt. Detta går att stänga av och enligt praxis ska man göra det med känslig information som lösenord.</p>
+    </article>
+
+    <article>
+      <h3>Gör en logisk tab-ordning</h3>
+
+      <img src="https://media.istockphoto.com/photos/cyber-security-it-engineer-working-on-protecting-network-against-picture-id1322517295?b=1&k=20&m=1322517295&s=170667a&w=0&h=x4Kmx8fQytr6VPfuKwE381xf-rfiBFctyXvpb7o5ju8=" alt="human using computer">
+
+      <p class="infotext">För de personer som navigerar sig enbart med pilarna är det bra att skapa en logisk tab-ordning till. Man vill kunna tabba sig uppifrån och ned. </p>
+    </article>
+
+    <article>
+      <h3>Erbjud användarna flera olika sätt att navigera</h3>
+
+      <img src="https://media.istockphoto.com/photos/search-engine-optimisation-or-seo-concept-searching-box-and-icon-on-picture-id1285087043?b=1&k=20&m=1285087043&s=170667a&w=0&h=nrEUJj8OZ2RY9vQLQwQI3XTRufD7mmSKernmQ_WKrD8=" alt="searchbar">
+
+      <p class="infotext">Det är bra att ge användaren flera sätt att söka på. Exempel på detta kan vara en navbar, en home-knapp och ett sökfält. </p>
+    </article>
+
+    <article>
+      <h3>Se till att koden validerar</h3>
+
+      <img src="https://media.istockphoto.com/photos/checkbox-picture-id472227510?b=1&k=20&m=472227510&s=170667a&w=0&h=y1fLsyB7OExz6yw0znSjr4atIKvSWTr2JzRftrm_ZxI=" alt="a checkmark">
+
+      <p class="infotext">Det är viktigt att alltid validera sin kod i slutet när man i klar. På så sätt så gör man koden godkänd och följer god praxis. Den mest kända är w3 validator. </p>
+    </article>
+
+  </div>
+
+</main>
+
+<footer>
+  <h4>Läs mer om tillgänglighet här:</h4>
+  <a href="https://consid.se/webbdirektivet/" target="_blank">Hemsida 1</a>
+  <a href="https://www.delorean.se/tillg%C3%A4nglighetsanalys-inf%C3%B6r-webbdirektivet?gclid=Cj0KCQiAnuGNBhCPARIsACbnLzqwiAGWLHKwK-8_N6FV3pKKJH19kLnRrpafU0erGob0IF6mAoEXNBsaAhKNEALw_wcB" target="_blank">hemsida 2</a>
+  <a href="https://www.mfd.se/organisation/vanliga-fragor-och-svar/fragor-om-delaktighet-och-tillganglighet/" target="_blank">hemsida 3</a>
+</footer>
+  
+</body>
+</html>
